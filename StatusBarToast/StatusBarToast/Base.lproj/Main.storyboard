@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +17,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPB-Xe-Rg6">
+                                <rect key="frame" x="40" y="40" width="60" height="30"/>
+                                <state key="normal" title="显示文字"/>
+                                <connections>
+                                    <action selector="showTxt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DMC-LS-4T4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN3-jr-bt8">
+                                <rect key="frame" x="40" y="90" width="60" height="30"/>
+                                <state key="normal" title="显示成功"/>
+                                <connections>
+                                    <action selector="showSuccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oqW-wr-CaF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zff-r8-LbJ">
+                                <rect key="frame" x="40" y="140" width="60" height="30"/>
+                                <state key="normal" title="显示失败"/>
+                                <connections>
+                                    <action selector="showError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xC-9B-fAR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw9-Ak-dkX">
+                                <rect key="frame" x="40" y="290" width="60" height="30"/>
+                                <state key="normal" title="隐藏窗口"/>
+                                <connections>
+                                    <action selector="hideWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qkY-TN-9Fp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-HQ-TXe">
+                                <rect key="frame" x="40" y="190" width="60" height="30"/>
+                                <state key="normal" title="显示消息"/>
+                                <connections>
+                                    <action selector="showMsg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YwY-AI-GWv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEm-CY-pLx">
+                                <rect key="frame" x="40" y="240" width="60" height="30"/>
+                                <state key="normal" title="显示加载"/>
+                                <connections>
+                                    <action selector="showProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQF-kl-rLA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LPn-HQ-TXe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="0Ft-tr-JHM"/>
+                            <constraint firstItem="zff-r8-LbJ" firstAttribute="top" secondItem="FN3-jr-bt8" secondAttribute="bottom" constant="20" id="1DM-wd-NwF"/>
+                            <constraint firstItem="dEm-CY-pLx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="L3L-wv-5yg"/>
+                            <constraint firstItem="uw9-Ak-dkX" firstAttribute="top" secondItem="dEm-CY-pLx" secondAttribute="bottom" constant="20" id="TSl-RG-jPJ"/>
+                            <constraint firstItem="FN3-jr-bt8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ft0-UN-7uc"/>
+                            <constraint firstItem="lPB-Xe-Rg6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="mEy-Ic-28S"/>
+                            <constraint firstItem="dEm-CY-pLx" firstAttribute="top" secondItem="LPn-HQ-TXe" secondAttribute="bottom" constant="20" id="nn5-kg-Czp"/>
+                            <constraint firstItem="zff-r8-LbJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="qD0-k2-HPu"/>
+                            <constraint firstItem="lPB-Xe-Rg6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="vwu-ij-vTg"/>
+                            <constraint firstItem="FN3-jr-bt8" firstAttribute="top" secondItem="lPB-Xe-Rg6" secondAttribute="bottom" constant="20" id="wh6-cH-TtM"/>
+                            <constraint firstItem="LPn-HQ-TXe" firstAttribute="top" secondItem="zff-r8-LbJ" secondAttribute="bottom" constant="20" id="yPa-Uk-luB"/>
+                            <constraint firstItem="uw9-Ak-dkX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zN2-El-wdM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

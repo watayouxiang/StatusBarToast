@@ -14,6 +14,7 @@
 		BBC9D1141D48940500691628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC9D1131D48940500691628 /* Assets.xcassets */; };
 		BBC9D1171D48940500691628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC9D1151D48940500691628 /* LaunchScreen.storyboard */; };
 		BBC9D1241D4894C400691628 /* ttStatusBarToast.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC9D1231D4894C400691628 /* ttStatusBarToast.m */; };
+		BBC9D1281D4895D700691628 /* ttStatusBarToast.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBC9D1271D4895D700691628 /* ttStatusBarToast.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BBC9D1181D48940500691628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBC9D1221D4894C400691628 /* ttStatusBarToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttStatusBarToast.h; sourceTree = "<group>"; };
 		BBC9D1231D4894C400691628 /* ttStatusBarToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttStatusBarToast.m; sourceTree = "<group>"; };
+		BBC9D1271D4895D700691628 /* ttStatusBarToast.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ttStatusBarToast.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		BBC9D1211D4894C400691628 /* StatusBarToast */ = {
 			isa = PBXGroup;
 			children = (
+				BBC9D1271D4895D700691628 /* ttStatusBarToast.bundle */,
 				BBC9D1221D4894C400691628 /* ttStatusBarToast.h */,
 				BBC9D1231D4894C400691628 /* ttStatusBarToast.m */,
 			);
@@ -154,6 +157,7 @@
 				BBC9D1171D48940500691628 /* LaunchScreen.storyboard in Resources */,
 				BBC9D1141D48940500691628 /* Assets.xcassets in Resources */,
 				BBC9D1121D48940500691628 /* Main.storyboard in Resources */,
+				BBC9D1281D4895D700691628 /* ttStatusBarToast.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
